@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+@import url(//cdn.rawgit.com/puts-blog/NanumSquare/master/NanumSquare.css);
+
+@font-face {
+	font-family: 'gothic';
+	src: url('./gothic.eot');
+	src: local('gothic'), url('./gothic.woff') format('woff'), url('./gothic.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Courier New';
+font-style: normal;
+font-weight: normal;
+src: local('Courier New'), url('Cour.woff') format('woff');
+}
+@font-face {
+font-family: 'Harlow Solid Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Harlow Solid Italic'), url('HARLOWSI_1.woff') format('woff');
+}
+@media screen {
+@font-face {
+  font-family: 'Cambria::Menu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cambria'), url('https://themes.googleusercontent.com/font?kit=FuCXqyJXTEEvujaBqOffUw') format('woff');
+}
+}
+
+body, h1, h2, h3, h4, h5, p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*header*/
+#header{
+    width: 100%;
+    height: 120px;
+    background: #f0f0f0;
+    position: fixed;
+    z-index: 1;
+}
+/*headerIn 시작*/
+.headerIn{}
+.headerIn h1{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100px;
+    margin: 10px 0;
+}
+.headerIn h1 a{
+    display: block;
+}
+.headerIn h1 a img{
+    width: 100px;
+}
+.gnb{
+    display: inline-block;
+    margin-left: 60px;
+}
+.gnb li{
+    display: inline-block;
+    margin-right: 60px;
+}
+.gnb li a{
+    font-size: 20px;
+    color: #969696;
+}
+.gnb li a:hover{
+    text-decoration: underline;
+}
+
+/*fullpage*/
+#fullpage{}
+
+/*section0 시작*/
+#section{}
+
+
+
+/*섹션1 시작*/
+#section{
+    margin-top: 120px;
+}
+.container h1{
+    text-align: center;
+    padding-top: 180px;
+    margin-bottom: 50px;
+}
+.container h1 img{
+    width: 300px;
+}
+.container p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3c3f41;
+    line-height: 60px;
+    font-family: 'NanumSquare';
+}
+
+
+
+
+#footer{
+    width: 100%;
+    background: #909090;
+    position: fixed;
+    bottom: 0;
+}
+#footer p{
+    text-align: center;
+    padding: 10px 0;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
