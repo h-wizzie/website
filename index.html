@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>I'm Hwiseo</title>
+        
+        
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/slick.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="css/main_stylesheet.css">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+                
+        <!--위 2개 fullscreen-->
+
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+        <script src="js/jquery.lineProgressbar.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*fullpage*/
+                $('#fullpage').fullpage({
+                    responsiveWidth:768,
+                    anchors: ['page01', 'page02', 'page03', 'page04', 'page05'], /*레프트 메뉴 각자 눌렀을 때, 해당페이지로 이동하기*/
+                    sectionsColor: ['#fff', 'none','#eaeaea','#909090'],
+
+                    afterLoad: function(anchorLink, index){
+                        var loadedSection = $ (this);
+                    },
+                });
+                
+                
+                /*navigation*/
+                
+                /*animation*/
+                /*animation*/
+                
+                $('#ps').LineProgressbar({
+                    percentage:90,
+                    radius: '3px',
+                    height: '14px',
+                    fillBackgroundColor: '#100ded'
+                });
+                $('#illu').LineProgressbar({
+                    percentage:80,
+                    radius: '3px',
+                    height: '14px',
+                    fillBackgroundColor: '#100ded'
+                });
+                $('#html').LineProgressbar({
+                    percentage:75,
+                    radius: '3px',
+                    height: '14px',
+                    fillBackgroundColor: '#100ded'
+                });
+                $('#js').LineProgressbar({
+                    percentage:65,
+                    radius: '3px',
+                    height: '14px',
+                    fillBackgroundColor: '#100ded'
+                });
+                $('#mos').LineProgressbar({
+                    percentage:90,
+                    radius: '3px',
+                    height: '14px',
+                    fillBackgroundColor: '#100ded'
+                });
+
+            });
+        </script>
+        
+    </head>
+    <body style="font-family:'Century Gothic';font-weight:normal;">
+
+        
+        <!--헤더 시작-->
+        <div id="header">
+                    <div class="headerIn w1200">
+                        <h1>
+                            <a href="index.html">
+                                <img src="images/common/logo.png" alt="HS로고"/>
+                            </a>
+                        </h1>
+                        
+                        <!--gnb 메뉴 시작-->
+                        <ul class="gnb">
+                            <li><a href="sub_aboutme.html">About</a></li>
+                            <li><a href="sub_work.html">Work</a></li>
+                            <li><a href="#page03">Contact</a></li>
+                        </ul>
+                        <!--gnb 메뉴 끝-->
+                        
+                        <!-- 반응형 추가 pannel-->
+                        <div class="rightmenu">
+                        
+                        <div class="nav"> 
+                            <div>
+                            <!--pannel 시작-->
+                            <div id="mySidenav" class="sidenav">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <!--네비 탑-->
+                                  <div class="navTop">
+                                      <div class="navLogo">
+                                          <a href="index.html">
+                                              <img src="images/common/logo.png" alt="HS로고"/>
+                                          </a>
+                                      </div>
+                                </div>
+                                <!--네비 탑-->
+
+
+            <!-------------------------네비 스크롤------------------------->
+                                    <!--메뉴 시작-->
+                                    <div class="navMenu">
+                                        
+                                        
+                                        
+                                        <!--아코디언 시작-->
+                                        <section id="content">
+                                            <div class="article-title"><a href="sub_aboutme.html">About</a></div>
+                                            <div class="article-title"><a href="sub_work.html">Work</a></div>
+                                            <div class="article-title"><a href="sub_unavailable.html">e-mail</a></div>
+                                            <div class="article-title"><a href="https://www.instagram.com/hwis_erin/">instagram</a></div>
+                                            <div class="bottomLogo"><img src="images/common/logo_character.png" alt="로고"/></div>
+                                        <!--/#accordion-->
+                                        </section>
+                                        <!--아코디언 끝--> 
+                                        
+                                    </div>
+                                    <!--메뉴 끝-->
+
+                                </div>
+                            </div>
+                            
+                            <span class="openbtn" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                            <!--pannel 끝-->
+                            
+                            </div>
+                        
+                        </div>
+                        <!-- 반응형 추가 pannel-->
+                        
+                    </div>
+                </div>
+        <!--헤더 끝-->
+        
+        <!--풀페이지 시작-->
+        <div id="fullpage">
+            
+            <!--첫번째 섹션 시작-->
+            <div class="section fp-auto-height-responsive active" id="section1">
+                <!--fp-auto-height-responsive 반응형일때 높이 조절-->
+                
+                <!--얼굴 로고 시작-->
+                <div class="logo">
+                    <img src="images/common/logo_character_without_text.png" alt="캐릭터 로고"/>
+                    <img src="images/common/logo_character.png" alt="캐릭터 로고"/>
+                </div>
+                <!--얼굴 로고 끝-->
+                
+                <!--어바웃미 시작-->
+                <div class="aboutme w1200">
+                    
+                    <h1 style="font-family:'Harlow Solid Italic';font-weight:normal;">
+                        <p style="font-family:'Courier New';font-weight:normal;font-size:48px">Get to know</p>
+                        About Me!
+                    </h1>
+                    
+                    <!--그래프 시작-->
+                    <div class="graph">
+                        
+                        <!--스킬 시작-->
+                        <div class="skill">
+                            <ul>
+                                <li>PHOTOSHOP</li>
+                                <li>ILLUSTRATOR</li>
+                                <li>HTML/CSS</li>
+                                <li>JAVASCRIPT</li>
+                                <li>M.O.S</li>
+                            </ul>
+                        </div>
+                        <!--스킬 끝-->
+                        
+                        <!--막대기 시작-->
+                        <div class="blueboxing">
+                            <div class="blue">
+                                <div id="ps"></div>
+                                <div id="illu"></div>
+                                <div id="html"></div>
+                                <div id="js"></div>
+                                <div id="mos"></div>
+                            </div>
+                        </div>
+                        
+                        <!--막대기 끝-->
+                        
+                        
+                    </div>
+                    <!--그래프 끝-->
+                    
+                </div>
+                <!--어바웃미 끝-->
+                
+            </div>
+            <!--첫번째 섹션 끝-->
+            
+            <!--두번째 섹션 시작-->
+            <div class="section fp-auto-height-responsive" id="section2">
+                <div class="bg">
+                    <div class="forward">
+                        <h1 style="font-family:'Harlow Solid Italic';font-weight:normal;">Work</h1>
+
+                        <div class="morebtn">
+                            <a href="sub_work.html">
+                                <p style="font-family:'Courier New';font-weight:normal;">more?</p>
+                                <span><img src="images/common/arrow_morebtn.png" alt="더보기버튼"/></span>
+                            </a>
+                        </div>
+
+                        <!--갤러리 시작-->
+                        <div class="gallery">
+                            <div>
+                                <a href="sub_work_details.html">
+                                   <img src="images/main/section2_gallery01.png" alt="이미지1"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="sub_work_details02.html">
+                                   <img src="images/main/section2_gallery02.png" alt="이미지2"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="sub_work_details03.html">
+                                   <img src="images/main/section2_gallery03.png" alt="이미지3"/>
+                                </a>
+                            </div>
+
+                        <!--갤러리 끝-->
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+            <!--두번째 섹션 끝-->
+            
+            <!--세번째 섹션 시작-->
+            <div class="section fp-auto-height-responsive" id="section3">
+                
+                <!--컨택미 시작-->
+                <div class="contactme">
+                    
+                    <h1 style="font-family:'Harlow Solid Italic';font-weight:normal;">
+                        <p style="font-family:'Courier New';font-weight:normal;font-size:48px">Feel free to</p>
+                        Contact Me!
+                    </h1>
+                    
+                    <!--파란색 박스 시작-->
+                    <div class="bluebox">
+                        
+                        <!--왼쪽 박스 시작-->
+                        <div class="leftbox">
+                            
+                            <ul class="left01">
+                                <ul>
+                                    <li>Email</li>
+                                    <li>hwiseo&#64;naver.com</li>
+                                </ul>
+                                <ul>
+                                    <li>Mobile</li>
+                                    <li>010 . 9237 . 2854</li>
+                                </ul>
+                            </ul>
+                            
+                            <ul class="left02">
+                                <li>
+                                    <a href="https://www.instagram.com/hwis_erin/">
+                                        <img src="images/main/section3_sns_instagram.png"
+                                                     alt="인스타그램"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:hwiseo@naver.com">
+                                        <img src="images/main/section3_sns_mail.png"
+                                                     alt="메일"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--왼쪽 박스 끝-->
+                        
+                        <!--오른쪽 박스 시작-->
+                        <div class="rightbox">
+                            <form action="/my-handling-form-page" method="post">
+                                <div>
+                                    <!--<label for="name">Name:</label>-->
+                                    <input type="text" id="name" placeholder="Name*"/>
+                                </div>
+                                <div>
+                                    <!--<label for="mail">E-mail:</label>-->
+                                    <input type="email" id="mail" placeholder="Email*"/>
+                                </div>
+                                <div>
+                                    <!--<label for="subject">Subject:</label>-->
+                                    <input type="text" id="name" placeholder="Subject"/>
+                                </div>
+                                <div>
+                                    <!--<label for="msg">Message:</label>-->
+                                    <textarea id="msg" placeholder="Message"></textarea>
+                                </div>
+
+                                <div class="button">
+                                    <button type="submit"><a href="sub_unavailable.html">SEND</a></button>
+                                </div>
+                            </form>
+                            <!--https://developer.mozilla.org/ko/docs/Learn/HTML/Forms/Your_first_HTML_form-->
+                            
+                        </div>
+                        <!--오른쪽 박스 끝-->
+                        
+                    </div>
+                    <!--파란색 박스 끝-->
+                    
+                </div>
+                <!--컨택미 끝-->
+                
+            </div>
+            <!--세번째 섹션 끝-->
+            
+            <!--푸터 시작-->
+            <div class="section fp-auto-height" id="section4">
+                <p>HS &copy; 2018</p>
+            </div>
+            <!--푸터 끝-->
+            
+        </div>
+        <!--풀페이지 끝-->
+        
+        <!--탑버튼 시작-->
+            <div class="footertopbtn">
+                <a href="#">
+                    TOP
+                </a>
+            </div>
+        <!--탑버튼 끝-->
+        
+        
+        
+        <script type="text/javascript">
+
+            /*navigation*/
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+                document.getElementById("container").style.marginTop = "0";
+                document.getElementById("pannelbg").style.display="block"; /*레프트메뉴 호버했을 때 메인이 검정색으로 변하기*/
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("container").style.marginTop = "80px";
+                document.getElementById("pannelbg").style.display="none";/*레프트메뉴 호버했을 때 메인이 검정색 나오지 않게*/
+            }
+            /*navigation*/
+            
+        </script>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
