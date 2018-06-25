@@ -215,8 +215,7 @@ a{
     margin-top: 20px;
 }
 
-.show-on-scroll { visibility: hidden; }
-.show-on-scroll.shown { visibility: visible; }
+
 
 .history{}
 .history h1{
@@ -232,21 +231,24 @@ a{
     margin: 0 auto;
     position: relative;
 }
-.historygraph div{
+.historygraph .cont{
     color: #777777;
     font-weight: 600;
     font-size: 16px;
     font-family: 'NanumSquare';
     margin: 0 auto;
 }
-.historygraph div p{
+.historygraph .cont p{
     color: #100ded;
     margin-bottom: 20px;
 }
 .cont{
     margin: 0 auto;
+    margin-top: 100px;
 }
-.cont01{}
+.cont01{
+    
+}
 .cont02{}
 .cont03{}
 .cont04{}
@@ -259,52 +261,50 @@ a{
 }
 .cont01 .circle{
     position: absolute;
-    top: 0;
+    top: 355px;
     left: 50%;
     margin-left: -7px;
 }
 .cont02 .circle{
     position: absolute;
-    top: 0;
+    top: 480px;
     left: 50%;
     margin-left: -7px;
-    margin-top: 125px;
 }
 .cont03 .circle{
     position: absolute;
-    top: 0;
+    top: 605px;
     left: 50%;
     margin-left: -7px;
-    margin-top: 250px;
 }
 .cont04 .circle{
     position: absolute;
-    top: 375px;
+    top: 735px;
     left: 50%;
     margin-left: -7px;
 }
 .cont01 div:last-child{
     text-align: left;
     position: absolute;
-    top: 0;
+    top: 355px;
     left: calc(50% + 30px);
 }
 .cont02 div:last-child{
     text-align: right;
     position: absolute;
-    top: 125px;
+    top: 480px;
     right: calc(50% + 30px);
 }
 .cont03 div:last-child{
     text-align: left;
     position: absolute;
-    top: 250px;
+    top: 605px;
     left: calc(50% + 30px);
 }
 .cont04 div:last-child{
     text-align: right;
     position: absolute;
-    top: 375px;
+    top: 735px;
     right: calc(50% + 30px);
 }
 
@@ -633,108 +633,106 @@ a{
     #section4{
         padding-bottom: 100px;
     }
-.show-on-scroll { visibility: hidden; }
-.show-on-scroll.shown { visibility: visible; }
+    .show-on-scroll { visibility: hidden; }
+    .show-on-scroll.shown { visibility: visible; }
 
-.history{}
-.history h1{
-    margin-top: 50px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.historygraph{}
-.center{
-    width: 3px;
-    height: 300px;
-    background: #100ded;
-    margin: 0 auto;
-    position: relative;
-}
-.historygraph div{
-    color: #777777;
-    font-weight: 600;
-    font-size: 12px;
-    font-family: 'NanumSquare';
-    margin: 0 auto;
-}
-.historygraph div p{
-    color: #100ded;
-    margin-bottom: 10px;
-}
-.cont{
-    margin: 0 auto;
-}
-.cont01{}
-.cont02{}
-.cont03{}
-.cont04{}
-.circle{
-    width: 15px;
-    height: 15px;
-    background: #100ded;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-.cont01 .circle{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -7px;
-}
-.cont02 .circle{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -7px;
-    margin-top: 95px;
-}
-.cont03 .circle{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -7px;
-    margin-top: 200px;
-}
-.cont04 .circle{
-    position: absolute;
-    top: 295px;
-    left: 50%;
-    margin-left: -7px;
-}
-.cont01 div:last-child{
-    text-align: left;
-    position: absolute;
-    top: 0;
-    left: calc(50% + 30px);
-}
-.cont02 div:last-child{
-    text-align: right;
-    position: absolute;
-    top: 95px;
-    right: calc(50% + 30px);
-}
-.cont03 div:last-child{
-    text-align: left;
-    position: absolute;
-    top: 200px;
-    left: calc(50% + 30px);
-}
-.cont04 div:last-child{
-    text-align: right;
-    position: absolute;
-    top: 295px;
-    right: calc(50% + 30px);
-}
-
-
-
-.section fp-auto-height{}
-#section5 p{
-    text-align: center;
-    padding: 10px 0;
-    color: #e0e0e0;
-    font-size: 14px;
-}
+    .history{}
+    .history h1{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .historygraph{}
+    .center{
+        width: 3px;
+        height: 300px;
+        background: #100ded;
+        margin: 0 auto;
+        position: relative;
+    }
+    .historygraph div{
+        color: #777777;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: 'NanumSquare';
+        margin: 0 auto;
+    }
+    .historygraph .cont p{
+        color: #100ded;
+        margin-bottom: 10px;
+    }
+    .cont{
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .cont01{}
+    .cont02{}
+    .cont03{}
+    .cont04{}
+    .circle{
+        width: 15px;
+        height: 15px;
+        background: #100ded;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .cont01 .circle{
+        position: absolute;
+        top: 129px;
+        left: 50%;
+        margin-left: -7px;
+    }
+    .cont02 .circle{
+        position: absolute;
+        top: 224px;
+        left: 50%;
+        margin-left: -7px;
+    }
+    .cont03 .circle{
+        position: absolute;
+        top: 319px;
+        left: 50%;
+        margin-left: -7px;
+    }
+    .cont04 .circle{
+        position: absolute;
+        top: 414px;
+        left: 50%;
+        margin-left: -7px;
+    }
+    .cont01 div:last-child{
+        text-align: left;
+        position: absolute;
+        top: 129px;
+        left: calc(50% + 30px);
+    }
+    .cont02 div:last-child{
+        text-align: right;
+        position: absolute;
+        top: 224px;
+        right: calc(50% + 30px);
+    }
+    .cont03 div:last-child{
+        text-align: left;
+        position: absolute;
+        top: 319px;
+        left: calc(50% + 30px);
+    }
+    .cont04 div:last-child{
+        text-align: right;
+        position: absolute;
+        top: 414px;
+        right: calc(50% + 30px);
+    }
+    
+    
+    .section fp-auto-height{}
+    #section5 p{
+        text-align: center;
+        padding: 10px 0;
+        color: #e0e0e0;
+        font-size: 14px;
+    }
     
     
     

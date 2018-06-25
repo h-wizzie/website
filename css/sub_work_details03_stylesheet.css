@@ -366,8 +366,11 @@ a{
         position: absolute;
         top: 20px;
         right: 20px;
+        z-index: 1;
     }
-    .viewclosebtn a{}
+    .viewclosebtn a{
+        display: block;
+    }
     .viewclosebtn a img{
         width: 20px;
     }
@@ -419,7 +422,7 @@ a{
         width: 252px;
         position: absolute;
         right: 50%;
-        margin-top: 250px;
+        margin-top: 230px;
         margin-right: -126px;
     }
     .title li{}
