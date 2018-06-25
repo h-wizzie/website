@@ -9,31 +9,30 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <link rel="stylesheet" type="text/css" href="css/slick.css" />
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
-        <link rel="stylesheet" type="text/css" href="css/main_stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/sub_aboutme_stylesheet.css">
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-                
         <!--위 2개 fullscreen-->
-
+        
         <script type="text/javascript" src="js/jquery.fullPage.js"></script>
         <script src="js/jquery.lineProgressbar.js"></script>
         <script type="text/javascript" src="js/slick.min.js"></script>
+
         <script type="text/javascript">
             $(document).ready(function() {
+                
                 /*fullpage*/
                 $('#fullpage').fullpage({
                     responsiveWidth:768,
                     anchors: ['page01', 'page02', 'page03', 'page04', 'page05'], /*레프트 메뉴 각자 눌렀을 때, 해당페이지로 이동하기*/
-                    sectionsColor: ['#fff', 'none','#eaeaea','#909090'],
+                    sectionsColor: ['#fff', '#eaeaea', 'none','#eaeaea','#909090'],
 
                     afterLoad: function(anchorLink, index){
                         var loadedSection = $ (this);
                     },
                 });
-                
-                
                 /*navigation*/
                 
                 /*animation*/
@@ -69,13 +68,15 @@
                     height: '14px',
                     fillBackgroundColor: '#100ded'
                 });
-
+                
+                /*scroll*/
+                /*scroll*/
+                
             });
         </script>
         
     </head>
     <body style="font-family:'Century Gothic';font-weight:normal;">
-
         
         <!--헤더 시작-->
         <div id="header">
@@ -85,12 +86,13 @@
                                 <img src="images/common/logo.png" alt="HS로고"/>
                             </a>
                         </h1>
+                        <h2 style="font-family:'Cambria';font-weight:normal;">Hi. I'm Hwiseo.</h2>
                         
                         <!--gnb 메뉴 시작-->
                         <ul class="gnb">
                             <li><a href="sub_aboutme.html">About</a></li>
                             <li><a href="sub_work.html">Work</a></li>
-                            <li><a href="#page03">Contact</a></li>
+                            <li><a href="index.html#page03">Contact</a></li>
                         </ul>
                         <!--gnb 메뉴 끝-->
                         
@@ -152,23 +154,31 @@
         <div id="fullpage">
             
             <!--첫번째 섹션 시작-->
-            <div class="section fp-auto-height-responsive active" id="section1">
-                <!--fp-auto-height-responsive 반응형일때 높이 조절-->
+            <div class="section  fp-auto-height-responsive active" id="section1">
                 
                 <!--얼굴 로고 시작-->
                 <div class="logo">
-                    <img src="images/common/logo_character_without_text.png" alt="캐릭터 로고"/>
                     <img src="images/common/logo_character.png" alt="캐릭터 로고"/>
+                    <h2 style="font-family:'Cambria';font-weight:normal;">Hi. I'm Hwiseo.</h2>
                 </div>
                 <!--얼굴 로고 끝-->
                 
+            </div>
+            <!--첫번째 섹션 끝-->
+            
+            <!--두번째 섹션 시작-->
+            <div class="section fp-auto-height-responsive" id="section2">
+                
                 <!--어바웃미 시작-->
                 <div class="aboutme w1200">
-                    
                     <h1 style="font-family:'Harlow Solid Italic';font-weight:normal;">
-                        <p style="font-family:'Courier New';font-weight:normal;font-size:48px">Get to know</p>
+                        <p style="font-family:'Courier New';font-weight:normal;">Get to know</p>
                         About Me!
-                    </h1>
+                    </h1>     
+                    
+                    <div class="contentTitle01">
+                        <img src="images/sub/sub_aboutme_contentTitle01.png" alt="1스킬"/>
+                    </div>
                     
                     <!--그래프 시작-->
                     <div class="graph">
@@ -195,158 +205,107 @@
                                 <div id="mos"></div>
                             </div>
                         </div>
-                        
                         <!--막대기 끝-->
-                        
                         
                     </div>
                     <!--그래프 끝-->
                     
                 </div>
                 <!--어바웃미 끝-->
-                
-            </div>
-            <!--첫번째 섹션 끝-->
-            
-            <!--두번째 섹션 시작-->
-            <div class="section fp-auto-height-responsive" id="section2">
-                <div class="bg">
-                    <div class="forward">
-                        <h1 style="font-family:'Harlow Solid Italic';font-weight:normal;">Work</h1>
 
-                        <div class="morebtn">
-                            <a href="sub_work.html">
-                                <p style="font-family:'Courier New';font-weight:normal;">more?</p>
-                                <span><img src="images/common/arrow_morebtn.png" alt="더보기버튼"/></span>
-                            </a>
-                        </div>
-
-                        <!--갤러리 시작-->
-                        <div class="gallery">
-                            <div>
-                                <a href="sub_work_details.html">
-                                   <img src="images/main/section2_gallery01.png" alt="이미지1"/>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="sub_work_details02.html">
-                                   <img src="images/main/section2_gallery02.png" alt="이미지2"/>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="sub_work_details03.html">
-                                   <img src="images/main/section2_gallery03.png" alt="이미지3"/>
-                                </a>
-                            </div>
-
-                        <!--갤러리 끝-->
-                        </div>
-                    </div>
-                </div>
-                 
             </div>
             <!--두번째 섹션 끝-->
             
             <!--세번째 섹션 시작-->
             <div class="section fp-auto-height-responsive" id="section3">
                 
-                <!--컨택미 시작-->
-                <div class="contactme">
+                <!--코어 시작-->
+                <div class="core">
                     
                     <h1 style="font-family:'Harlow Solid Italic';font-weight:normal;">
-                        <p style="font-family:'Courier New';font-weight:normal;font-size:48px">Feel free to</p>
-                        Contact Me!
+                        <img src="images/sub/sub_aboutme_contentTitle02.png" alt="2코어"/>
                     </h1>
                     
-                    <!--파란색 박스 시작-->
-                    <div class="bluebox">
-                        
-                        <!--왼쪽 박스 시작-->
-                        <div class="leftbox">
-                            
-                            <ul class="left01">
-                                <ul>
-                                    <li>Email</li>
-                                    <li>hwiseo&#64;naver.com</li>
-                                </ul>
-                                <ul>
-                                    <li>Mobile</li>
-                                    <li>010 . 9237 . 2854</li>
-                                </ul>
-                            </ul>
-                            
-                            <ul class="left02">
-                                <li>
-                                    <a href="https://www.instagram.com/hwis_erin/">
-                                        <img src="images/main/section3_sns_instagram.png"
-                                                     alt="인스타그램"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:hwiseo@naver.com">
-                                        <img src="images/main/section3_sns_mail.png"
-                                                     alt="메일"/>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--왼쪽 박스 끝-->
-                        
-                        <!--오른쪽 박스 시작-->
-                        <div class="rightbox">
-                            <form action="/my-handling-form-page" method="post">
-                                <div>
-                                    <!--<label for="name">Name:</label>-->
-                                    <input type="text" id="name" placeholder="Name*"/>
-                                </div>
-                                <div>
-                                    <!--<label for="mail">E-mail:</label>-->
-                                    <input type="email" id="mail" placeholder="Email*"/>
-                                </div>
-                                <div>
-                                    <!--<label for="subject">Subject:</label>-->
-                                    <input type="text" id="name" placeholder="Subject"/>
-                                </div>
-                                <div>
-                                    <!--<label for="msg">Message:</label>-->
-                                    <textarea id="msg" placeholder="Message"></textarea>
-                                </div>
-
-                                <div class="button">
-                                    <button type="submit"><a href="sub_unavailable.html">SEND</a></button>
-                                </div>
-                            </form>
-                            <!--https://developer.mozilla.org/ko/docs/Learn/HTML/Forms/Your_first_HTML_form-->
-                            
-                        </div>
-                        <!--오른쪽 박스 끝-->
-                        
-                    </div>
-                    <!--파란색 박스 끝-->
+                    <ul class="coreIcon">
+                        <li><img src="images/sub/sub_aboutme_corecompetences01.png" alt="핵심역량1"/><p>책임감</p></li>
+                        <li><img src="images/sub/sub_aboutme_corecompetences03.png" alt="핵심역량2"/><p>의사소통 능력</p></li>
+                        <li><img src="images/sub/sub_aboutme_corecompetences02.png" alt="핵심역량3"/><p>빠른 습득력</p></li>
+                        <li><img src="images/sub/sub_aboutme_corecompetences04.png" alt="핵심역량4"/><p>자신감</p></li>
+                    </ul>
+                    
                     
                 </div>
-                <!--컨택미 끝-->
+                <!--코어 끝-->
                 
             </div>
             <!--세번째 섹션 끝-->
             
+            <!--네번째 섹션 시작-->
+            <div class="section fp-auto-height-responsive" id="section4">
+                
+                <!--히스토리 시작-->
+                <div class="history">
+                    <h1 style="font-family:'Harlow Solid Italic';font-weight:normal;">
+                        <img src="images/sub/sub_aboutme_contentTitle03.png" alt="3히스토리"/>
+                    </h1>
+                    <!--https://daneden.github.io/animate.css/-->
+                    <!--위에 애니메이션 참고할것!-->
+                    
+                    
+                    <!--fade in big-->
+                    <div class="historygraph animated fadeInDownBig">
+                        <div class="center"></div>
+                        <div class="cont cont01">
+                            <div class="circle"></div>
+                            <div><p>2018.08</p>대학교 졸업 예정</div>
+                        </div>
+                        <div class="cont cont02">
+                            <div class="circle"></div>
+                            <div>
+                                <p>2017.12 ~ 2018.06</p>
+                                더조은 컴퓨터학원<br>스마트웹 &amp; 모바일 컨텐츠<br>양성 과정 수료
+                            </div>
+                        </div>
+                        <div class="cont cont03">
+                            <div class="circle"></div>
+                            <div>
+                                <p>2016.03 ~ 2017.02</p>
+                                호주 워킹홀리데이 연수
+                            </div>
+                        </div>
+                        <div class="cont cont04">
+                            <div class="circle"></div>
+                            <div>
+                                <p>2013.03</p>
+                                경남대학교 관광학부 입학
+                            </div>
+                        </div>
+                    </div>
+                    <!--fade in big-->
+
+                    
+                </div>
+                <!--히스토리 끝-->
+                
+            </div>
+            <!--네번째 섹션 끝-->
+            
             <!--푸터 시작-->
-            <div class="section fp-auto-height" id="section4">
+            <div class="section fp-auto-height" id="section5">
                 <p>HS &copy; 2018</p>
             </div>
             <!--푸터 끝-->
-            
+
         </div>
         <!--풀페이지 끝-->
         
-        <!--탑버튼 시작-->
-            <div class="footertopbtn">
-                <a href="#">
-                    TOP
-                </a>
-            </div>
-        <!--탑버튼 끝-->
-        
+        <!--푸터 탑버튼-->
+        <div class="footertopbtn">
+                    <a href="#">
+                        TOP
+                    </a>
+                </div>
+        <!--푸터 탑버튼-->
         
         
         <script type="text/javascript">
@@ -368,6 +327,8 @@
         
     </body>
 </html>
+
+
 
 
 
