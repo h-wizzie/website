@@ -364,6 +364,7 @@ a{
     .container{
         padding-top: 0;
         position: relative;
+        margin-bottom: 50px;
     }
     .viewclosebtn{
         position: absolute;
@@ -423,7 +424,7 @@ a{
         width: 252px;
         position: absolute;
         right: 50%;
-        margin-top: 230px;
+        margin-top: 250px;
         margin-right: -126px;
     }
     .title li{}
@@ -460,7 +461,7 @@ a{
         font-weight: bold;
     }
     #footer{
-        bottom: 0;
+        bottom: -50px;
     }
     /*반응형 추가*/
 
