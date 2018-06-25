@@ -415,7 +415,8 @@ a{
         left: calc(232px + 15%);
     }
 
-    .regular slider, .title, .closebtn{
+    .title, .closebtn{
+        display: block;
     }
     
     .title{

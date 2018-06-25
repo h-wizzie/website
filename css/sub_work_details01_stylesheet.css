@@ -170,7 +170,7 @@ a{
 #footer{
     width: 100%;
     background: #909090;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 #footer p{
@@ -384,6 +384,7 @@ a{
     
     .regular{
         width: 70%;
+        height: 230px;
         margin: 0 auto;
     }
     .regular div{}
@@ -393,6 +394,7 @@ a{
     .slick-active{
     }
     .slick-active div{
+        height: 230px;
         padding-left: 0;
         overflow: hidden;
     }
@@ -416,9 +418,9 @@ a{
         left: calc(232px + 15%);
     }
 
-    .regular slider, .title, .closebtn{
+    .title, .closebtn{
+        display: block;
     }
-    
     .title{
         width: 252px;
         position: absolute;
@@ -459,7 +461,9 @@ a{
         color: #969696;
         font-weight: bold;
     }
-    
+    #footer{
+        bottom: 0;
+    }
     /*반응형 추가*/
 
 
