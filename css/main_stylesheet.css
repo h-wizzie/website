@@ -84,15 +84,13 @@ a{
 #fullpage{}
 
 /*섹션1 시작*/
-#section1{
-
-}
+#section1{}
 .logo{
     text-align: center;
-    padding-top: 150px; /*집에서 수정*/
+    padding-top: 130px; /*집에서 수정*/
 }
 .logo img{
-    width: 200px;
+    width: 170px;
 }
 .logo img:last-child{
     display: none;
@@ -113,7 +111,7 @@ a{
 .graph{
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .blueboxing{
     width: 460px;
@@ -163,11 +161,17 @@ a{
 
 /*섹션2 시작*/
 #section2{
-    margin-top: 120px;
     background: url(../images/main/work_bg.jpg) no-repeat;
     background-size: 100%;
+    position: relative;
 }
-
+.forward{
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -280px;
+    right: 50%;
+    margin-right: -484px;
+}
 .bg{
     text-align: center;
     width: 100%;
@@ -178,7 +182,6 @@ a{
     font-size:60px;
     text-align: center;
     color: #858585;
-    padding-top: 80px;
 }
 .morebtn{
     width: 120px;
@@ -215,7 +218,7 @@ a{
 }
 
 .gallery{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .gallery div{
     width: 320px;
@@ -242,11 +245,11 @@ a{
 
 .bluebox{
     width: 800px;
-    height: 400px;
+    height: 360px;
     margin: 0 auto;
     background: none;
     border: 5px solid #100ded;
-    margin-top: 50px;
+    margin-top: 30px;
     position: relative;
 }
 .bluebox div{}
@@ -355,7 +358,7 @@ button a{
 .leftbox, .rightbox{
     display: inline-block;
     vertical-align: top;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .section fp-auto-height{}
 #section4 p{
@@ -783,7 +786,6 @@ button a{
     .rightbox{
         display: inline-block;
         vertical-align: top;
-        margin-top: 70px;
         position: absolute;
         right: 50%;
         margin-right: -140px;
