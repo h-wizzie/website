@@ -508,7 +508,7 @@ button a{
     .sidenav .navMenu a {
         /*padding: 8px 8px 8px 32px;*/
         text-decoration: none;
-        font-size: 30px;
+        font-size: 28px;
         font-family: 'Century Gothic';
         color: #000;
         display: block;
@@ -516,7 +516,7 @@ button a{
     }
     .sidenav .navMenu div:nth-child(3) a, 
     .sidenav .navMenu div:nth-child(4) a{
-        font-size: 24px;
+        font-size: 22px;
         color: #969696;
     }
     .bottomLogo{
@@ -524,7 +524,7 @@ button a{
     }
     .bottomLogo img{
         width: 120px;
-        padding-top: 15px;
+        padding-top: 5%
     }
     
     /*섹션1*/
