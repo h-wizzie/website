@@ -407,7 +407,7 @@ button a{
     #header{
         width: 100%;
         padding: 20px;
-        height: 120px;
+        height: 100px;
         background: #fff;
         z-index: 1;
         position: static;
@@ -438,7 +438,7 @@ button a{
         display: block;
         position: absolute;
         right: 10px;
-        top: 8px;
+        top: 10px;
     }
     .rightmenu div{
         display: inline-block;
@@ -524,7 +524,7 @@ button a{
     }
     .bottomLogo img{
         width: 120px;
-        padding-top: 10%
+        padding-top: 10%;
     }
     
     /*섹션1*/
@@ -818,7 +818,7 @@ button a{
     }
     #section4 p{
         text-align: center;
-        padding: 10px 0;
+        padding: 13px 0;
         color: #e0e0e0;
         font-size: 14px;
         background: #909090;
@@ -827,9 +827,9 @@ button a{
     /*footer topbtn*/
     .footertopbtn{
         display: block;
-        width: 35px;
-        height: 35px;
-        line-height:35px;
+        width: 41px;
+        height: 41px;
+        line-height:41px;
         background: #fff;
         border: 1px solid #e0e0e0;
         position: fixed;

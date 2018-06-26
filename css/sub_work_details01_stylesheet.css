@@ -227,7 +227,7 @@ a{
     #header{
         width: 100%;
         padding: 20px;
-        height: 120px;
+        height: 100px;
         background: #f0f0f0;
         position: static;
         z-index: 1;
@@ -247,7 +247,7 @@ a{
         display: block;
     }
     .headerIn h1 a img{
-        width: 80px;
+        width: 60px;
     }
     #header h2{
         display: block;
@@ -257,7 +257,7 @@ a{
         margin-right: -36px;
         font-size: 30px;
         color: #858585;
-        padding-top: 25px;
+        padding-top: 15px;
     }
     .gnb{
         display: none;
@@ -268,7 +268,7 @@ a{
         display: block;
         position: absolute;
         right: 10px;
-        top: 8px;
+        top: 10px;
     }
     .rightmenu div{
         display: inline-block;
@@ -276,7 +276,7 @@ a{
     }
     .rightmenu div a{}
     .rightmenu div a img{
-        width: 80px;
+        width: 60px;
     }
 
     /*레프트 네비게이션 시작*/
@@ -285,8 +285,9 @@ a{
     }
     .openbtn{
         color: #000;
-        font-size: 20px;
         z-index: 1;
+        font-size:30px;
+        cursor:pointer;
     }
     .closebtn{
         position: absolute;
@@ -327,7 +328,7 @@ a{
     .sidenav .navMenu{
         width: 100%;
         text-align: center;
-        margin-top: 180px;
+        margin-top: 160px;
     }
     .sidenav .navMenu div{
         width: 100%;
@@ -337,28 +338,23 @@ a{
     .sidenav .navMenu a {
         /*padding: 8px 8px 8px 32px;*/
         text-decoration: none;
-        font-size: 24px;
+        font-size: 28px;
         font-family: 'Century Gothic';
         color: #000;
         display: block;
         transition: 0.3s;
     }
-    .sidenav .navMenu div:nth-child(3) a{
-        margin-top: 14px;
-    }
     .sidenav .navMenu div:nth-child(3) a, 
     .sidenav .navMenu div:nth-child(4) a{
-        font-size: 20px;
+        font-size: 22px;
         color: #969696;
     }
     .bottomLogo{
         text-align: center;
-        position: absolute;
-        bottom: 5%;
-        left: 0;
     }
     .bottomLogo img{
-        width: 150px;
+        width: 120px;
+        padding-top: 10%
     }
 
     .container{
@@ -441,12 +437,18 @@ a{
         font-size: 16px;
         font-style: italic;
     }
+    
+    /*footer*/
+    #footer p{
+        padding: 13px 0;
+    }
+    
     /*footer topbtn*/
     .footertopbtn{
         display: block;
-        width: 35px;
-        height: 35px;
-        line-height:35px;
+        width: 41px;
+        height: 41px;
+        line-height:41px;
         background: #fff;
         border: 1px solid #e0e0e0;
         position: fixed;
