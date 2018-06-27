@@ -519,6 +519,7 @@ a{
     .aboutme{
         margin-top: 50px;
         margin: 0 auto;
+        position: static;
     }
     .aboutme h1{
         text-align: center;
