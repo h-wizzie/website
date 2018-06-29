@@ -118,23 +118,22 @@ a{
     overflow: hidden;
 }
 .slick-active div img{
-    width: 640px;
-    height: 590px;
+    width: 35%;
 }
 .slick-arrow{
     position:absolute;
     top:50%;
-    margin-top:-25px;
+    margin-top:-26px;
     font-size:50px;
     color: #c2c2c2;
     vertical-align: middle;
 }
 .prevBtn{
-    left: 100px;
+    left: 5%;
     z-index: 1;
 }
 .nextBtn{
-    left: 915px;
+    left: 15%;
 }
 
 .title, .closebtn{
@@ -144,8 +143,8 @@ a{
 .title{
     width: 450px;
     position: absolute;
-    top: 80px;
-    right: 300px;
+    top: 10%;
+    right: 15%;
 }
 .title li{}
 .title li:first-child{
@@ -419,7 +418,7 @@ a{
         width: 252px;
         position: absolute;
         right: 50%;
-        margin-top: 250px;
+        margin-top: 80%;
         margin-right: -126px;
     }
     .title li{}
