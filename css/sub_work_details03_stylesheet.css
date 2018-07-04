@@ -96,33 +96,25 @@ a{
     padding-top: 120px;
     position: relative;
 }
-.viewclosebtn{
-    position: absolute;
-    top: 200px;
-    right: 70px;
-}
-.viewclosebtn a{}
-.viewclosebtn a img{}
-
 .details{
     position: relative;
-    margin: 100px 0;
+    margin-top: 100px;
 }
 .regular slider{}
 .regular slider div{}
 .regular slider div img{}
-.slick-active{
-}
+.slick-active{}
 .slick-active div{
-    padding-left: 100px;
+    padding-left: 5%;
     overflow: hidden;
+    width: 100%;
 }
 .slick-active div img{
-    width: 35%;
+    width: 30%;
 }
 .slick-arrow{
     position:absolute;
-    top:50%;
+    top:45%;
     margin-top:-26px;
     font-size:50px;
     color: #c2c2c2;
@@ -133,7 +125,7 @@ a{
     z-index: 1;
 }
 .nextBtn{
-    left: 47%;
+    left: 43%;
 }
 
 .title, .closebtn{
