@@ -96,16 +96,6 @@ a{
     padding-top: 120px;
     position: relative;
 }
-.viewclosebtn{
-    position: absolute;
-    top: 200px;
-    right: 70px;
-    z-index: 1;
-}
-.viewclosebtn a{
-    display: block;
-}
-.viewclosebtn a img{}
 
 .details{
     position: relative;
@@ -118,14 +108,15 @@ a{
 .slick-active div{
     margin-left: 5%;
     overflow: hidden;
+    width: 100%;
 }
 .slick-active div img{
-    width: 35%;
+    width: 30%;
 }
 .slick-arrow{
     position:absolute;
-    top:50%;
-    margin-top:-26px;
+    top:45%;
+    margin-top:-25px;
     font-size:50px;
     color: #c2c2c2;
     vertical-align: middle;
@@ -135,7 +126,7 @@ a{
     z-index: 1;
 }
 .nextBtn{
-    left: 47%;
+    left: 44%;
 }
 
 .title, .closebtn{
@@ -359,17 +350,6 @@ a{
         padding-top: 0;
         position: relative;
     }
-    .viewclosebtn{
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 1;
-    }
-    .viewclosebtn a{}
-    .viewclosebtn a img{
-        width: 20px;
-    }
-    
     .details{
         position: relative;
         padding: 70px 0;
@@ -387,6 +367,7 @@ a{
     .slick-active{
     }
     .slick-active div{
+        margin-left: 0;
         padding-left: 0;
         overflow: hidden;
     }
