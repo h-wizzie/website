@@ -1,0 +1,381 @@
+@charset "utf-8";
+
+@import url(//cdn.rawgit.com/puts-blog/NanumSquare/master/NanumSquare.css);
+
+@font-face {
+	font-family: 'gothic';
+	src: url('./gothic.eot');
+	src: local('gothic'), url('./gothic.woff') format('woff'), url('./gothic.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Courier New';
+font-style: normal;
+font-weight: normal;
+src: local('Courier New'), url('Cour.woff') format('woff');
+}
+@font-face {
+font-family: 'Harlow Solid Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Harlow Solid Italic'), url('HARLOWSI_1.woff') format('woff');
+}
+@media screen {
+@font-face {
+  font-family: 'Cambria::Menu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cambria'), url('https://themes.googleusercontent.com/font?kit=FuCXqyJXTEEvujaBqOffUw') format('woff');
+}
+}
+
+body, h1, h2, h3, h4, h5, p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*header*/
+#header{
+    width: 100%;
+    height: 120px;
+    background: #f0f0f0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+/*headerIn 시작*/
+.headerIn{}
+.headerIn h1{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100px;
+    margin: 10px 0;
+}
+.headerIn h1 a{
+    display: block;
+}
+.headerIn h1 a img{
+    width: 100px;
+}
+.gnb{
+    display: inline-block;
+    margin-left: 60px;
+}
+.gnb li{
+    display: inline-block;
+    margin-right: 60px;
+}
+.gnb li a{
+    font-size: 20px;
+    color: #969696;
+}
+.gnb li a:hover{
+    text-decoration: underline;
+}
+
+
+.container{
+    padding-top: 120px;
+    position: relative;
+}
+
+.details{
+    text-align: center;
+    position: relative;
+    margin: 100px 0;
+}
+
+.title{}
+.title li{}
+.title li:first-child{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.title li:nth-child(2){
+    font-size: 18px;
+    font-family: 'NanumSquare';
+    color: #6e6e6e;
+    margin-bottom: 50px;
+}
+.title li p{
+    margin-top: 15px;
+}
+.title img{
+    text-align: center;
+    width: 50%;
+    border: 1px solid #ddd;
+}
+
+#footer{
+    width: 100%;
+    background: #909090;
+}
+#footer p{
+    text-align: center;
+    padding: 10px 0;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+/*웹에서 보이지 않음*/
+#header h2{
+    display: none;
+}
+.rightmenu{
+    display: none;
+}
+#pannelbg{
+    display: none;
+}
+.footertopbtn{
+    display: none;
+}
+/*웹에서 보이지 않음*/
+
+
+
+/*반응형*/
+@media screen and (max-width:768px){
+    body{
+        min-width: auto;
+    }
+    .w1200{
+        width: auto;
+    }
+    
+    /*pannel bg*/
+    #pannelbg{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top:0;
+    }
+    #pannelbg a{
+        position: absolute;
+        right: 5px;
+        color: #000;
+        font-size: 40px;
+    }
+    .section{}
+    /*header*/
+    #header{
+        width: 100%;
+        padding: 20px;
+        height: 100px;
+        background: #f0f0f0;
+        position: static;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+    /*headerIn 시작*/
+    .headerIn{
+        position: relative;
+    }
+    .headerIn h1{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+    }
+    .headerIn h1 a{
+        display: block;
+    }
+    .headerIn h1 a img{
+        width: 60px;
+    }
+    #header h2{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        margin-right: -36px;
+        font-size: 30px;
+        color: #858585;
+        padding-top: 15px;
+    }
+    .gnb{
+        display: none;
+    }
+    
+    /*라이트 메뉴*/
+    .rightmenu{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .rightmenu div{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .rightmenu div a{}
+    .rightmenu div a img{
+        width: 60px;
+    }
+
+    /*레프트 네비게이션 시작*/
+    body {
+        font-family: "Lato", sans-serif;
+    }
+    .openbtn{
+        color: #000;
+        z-index: 1;
+        font-size:30px;
+        cursor:pointer;
+    }
+    .closebtn{
+        position: absolute;
+        top: 20px;
+        right: 0;
+        font-size: 50px;
+        padding-right: 20px;
+        z-index: 3;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .sidenav .navTop{
+        width: 100%;
+        background: none;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .navTop div{
+        display: inline-block;
+        margin: 0;
+    }
+    .navTop .navLogo{
+        padding: 20px;
+    }
+    .navTop .navLogo a{
+        display: block;
+    }
+    .sidenav .navMenu{
+        width: 100%;
+        text-align: center;
+        margin-top: 160px;
+    }
+    .sidenav .navMenu div{
+        width: 100%;
+        margin: 5px auto;
+        box-sizing: border-box;
+    }
+    .sidenav .navMenu a {
+        /*padding: 8px 8px 8px 32px;*/
+        text-decoration: none;
+        font-size: 28px;
+        font-family: 'Century Gothic';
+        color: #000;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav .navMenu div:nth-child(3) a, 
+    .sidenav .navMenu div:nth-child(4) a{
+        font-size: 22px;
+        color: #969696;
+    }
+    .bottomLogo{
+        text-align: center;
+    }
+    .bottomLogo img{
+        width: 120px;
+        padding-top: 10%
+    }
+
+    .container{
+        padding-top: 0;
+        position: relative;
+    }
+    .details{
+        text-align: center;
+        position: relative;
+        margin: 50px 0;
+    }
+
+    .title{}
+    .title li{}
+    .title li:first-child{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .title li:nth-child(2){
+        font-size: 13px;
+        font-family: 'NanumSquare';
+        color: #6e6e6e;
+        margin-bottom: 30px;
+    }
+    .title li p{
+        margin-top: 10px;
+    }
+    .title img{
+        text-align: center;
+        width: 80%;
+        border: 1px solid #ddd;
+    }
+    
+    /*footer*/
+    #footer p{
+        padding: 13px 0;
+    }
+    
+    /*footer topbtn*/
+    .footertopbtn{
+        display: block;
+        width: 41px;
+        height: 41px;
+        line-height:41px;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        font-size: 13px;
+    }
+    .footertopbtn a{
+        color: #969696;
+        font-weight: bold;
+    }
+    /*반응형 추가*/
+
+
+
+
+
+
+
+
+
+
